@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Scene} from '../game/scene';
 
 @Component({
   selector: 'app-renderer',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RendererComponent implements OnInit {
   text = `Rendering the 3D view`;
-  constructor() { }
+  constructor() {
+    const scene = new Scene();
+    this.text = scene.launchText;
+  }
 
   ngOnInit() {
   }
