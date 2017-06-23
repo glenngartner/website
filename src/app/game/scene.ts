@@ -1,10 +1,20 @@
-/**
- * Created by glenn on 6/21/2017.
- */
+import {Actor} from './actors/actor';
+import {Geometry} from './actors/geometry';
 
 export class Scene {
-  public launchText = 'Game scene created';
+  public static id = 1;
+  public actors: Actor[] = [];
+  public geometry: Geometry[] = [];
+
   constructor() {
-    this.launchText = `Game scene constructed`;
+    console.log(`Scene number ${Scene.id} created`);
+    Scene.id ++;
+  }
+
+  add(actor: Actor) {
+    this.actors.push(actor);
+    if (actor instanceof Geometry) {
+      this.geometry.push(actor);
+    }
   }
 }

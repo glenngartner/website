@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Scene} from '../game/scene';
+import {ThreeDProto} from '../game/3d_proto';
+import {Actor} from '../game/actors/actor';
 
 @Component({
   selector: 'app-renderer',
@@ -8,9 +9,11 @@ import {Scene} from '../game/scene';
 })
 export class RendererComponent implements OnInit {
   text = `Rendering the 3D view`;
+  actors: Actor[];
   constructor() {
-    const scene = new Scene();
-    this.text = scene.launchText;
+    const threeDproto = new ThreeDProto();
+    this.actors = threeDproto.scene.actors;
+
   }
 
   ngOnInit() {
