@@ -7,6 +7,7 @@ import {Actor} from '../game/actors/actor';
   templateUrl: './renderer.component.html',
   styleUrls: ['./renderer.component.css']
 })
+
 export class RendererComponent implements OnInit {
   text = `Rendering the 3D view`;
   actors: Actor[];

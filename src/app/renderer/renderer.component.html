@@ -1,7 +1,15 @@
-<p>
-  {{text}}
-</p>
-<h3>
-  Scene actors:
-</h3>
-<p *ngFor="let actor of actors">{{actor.name}}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+      <h3>
+        Scene actors:
+      </h3>
+      <p class="col-md-3" *ngFor="let actor of actors">{{actor.name}}</p>
+    </div>
+    <div class="col-md-9">
+      <p>
+        {{text}}
+      </p>
+    </div>
+  </div>
+</div>
