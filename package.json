@@ -22,11 +22,13 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.26",
+    "@types/three": "^0.84.15",
     "babylonjs": "^3.0.4-beta",
     "bootstrap": "^4.0.0-alpha.6",
     "cannon": "^0.6.2",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
+    "three": "^0.86.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

@@ -6708,7 +6708,7 @@ declare module BABYLON {
          */
         getHashCode(): number;
         /**
-         * Returns a new array with three elements : the coordinates the Vector3.
+         * Returns a new array with three-typings elements : the coordinates the Vector3.
          */
         asArray(): number[];
         /**
@@ -6996,7 +6996,7 @@ declare module BABYLON {
          */
         static Center(value1: Vector3, value2: Vector3): Vector3;
         /**
-         * Given three orthogonal normalized left-handed oriented Vector3 axis in space (target system),
+         * Given three-typings orthogonal normalized left-handed oriented Vector3 axis in space (target system),
          * RotationFromAxis() returns the rotation Euler angles (ex : rotation.x, rotation.y, rotation.z) to apply
          * to something in order to rotate it from its local system to the given target system.
          * Note : axis1, axis2 and axis3 are normalized during this operation.
@@ -7883,7 +7883,7 @@ declare module BABYLON {
          */
         dotCoordinate(point: any): number;
         /**
-         * Updates the current Plane from the plane defined by the three passed points.
+         * Updates the current Plane from the plane defined by the three-typings passed points.
          * Returns the updated Plane.
          */
         copyFromPoints(point1: Vector3, point2: Vector3, point3: Vector3): Plane;
@@ -7900,7 +7900,7 @@ declare module BABYLON {
          */
         static FromArray(array: ArrayLike<number>): Plane;
         /**
-         * Returns a new Plane defined by the three passed points.
+         * Returns a new Plane defined by the three-typings passed points.
          */
         static FromPoints(point1: any, point2: any, point3: any): Plane;
         /**
@@ -7995,7 +7995,7 @@ declare module BABYLON {
         startAngle: Angle;
         orientation: Orientation;
         /**
-         * Creates an Arc object from the three passed points : start, middle and end.
+         * Creates an Arc object from the three-typings passed points : start, middle and end.
          */
         constructor(startPoint: Vector2, midPoint: Vector2, endPoint: Vector2);
     }
@@ -12040,7 +12040,7 @@ declare module BABYLON {
         */
         updateParticleVertex(particle: SolidParticle, vertex: Vector3, pt: number): Vector3;
         /**
-        * This will be called before any other treatment by `setParticles()` and will be passed three parameters.
+        * This will be called before any other treatment by `setParticles()` and will be passed three-typings parameters.
         * This does nothing and may be overwritten by the user.
         * @param start the particle index in the particle array where to stop to iterate, same than the value passed to setParticle()
         * @param stop the particle index in the particle array where to stop to iterate, same than the value passed to setParticle()
@@ -12049,7 +12049,7 @@ declare module BABYLON {
         beforeUpdateParticles(start?: number, stop?: number, update?: boolean): void;
         /**
         * This will be called  by `setParticles()` after all the other treatments and just before the actual mesh update.
-        * This will be passed three parameters.
+        * This will be passed three-typings parameters.
         * This does nothing and may be overwritten by the user.
         * @param start the particle index in the particle array where to stop to iterate, same than the value passed to setParticle()
         * @param stop the particle index in the particle array where to stop to iterate, same than the value passed to setParticle()
