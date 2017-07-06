@@ -16,6 +16,7 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
   {path: 'about', component: AboutComponent, data: {title: 'About'}},
   {path: 'game', component: RendererComponent, data: {title: '3D App'}},
+  {path: 'pong', component: BlocPongComponent, data: {title: 'Multi-Renderer Pong'}},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ]
