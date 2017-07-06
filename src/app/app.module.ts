@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AboutComponent } from './about/about.component';
+import { BlocPongComponent } from './bloc-pong/bloc-pong.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     FooterComponent,
     HomeComponent,
     PageNotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    BlocPongComponent
   ],
   imports: [
     RouterModule.forRoot(
